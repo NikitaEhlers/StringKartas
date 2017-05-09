@@ -1,0 +1,5 @@
+E:\Dev\StringCalculator2\StringCalculator2\bin\Debug\StringCalculator2.dll
+E:\Dev\StringCalculator2\StringCalculator2\bin\Debug\StringCalculator2.pdb
+E:\Dev\StringCalculator2\StringCalculator2\obj\Debug\StringCalculator2.csprojResolveAssemblyReference.cache
+E:\Dev\StringCalculator2\StringCalculator2\obj\Debug\StringCalculator2.dll
+E:\Dev\StringCalculator2\StringCalculator2\obj\Debug\StringCalculator2.pdb

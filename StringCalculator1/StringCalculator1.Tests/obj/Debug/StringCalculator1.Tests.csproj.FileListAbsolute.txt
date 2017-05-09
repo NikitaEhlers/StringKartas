@@ -1,0 +1,9 @@
+E:\Dev\StringCalculator1\StringCalculator1.Tests\bin\Debug\StringCalculator1.Tests.dll
+E:\Dev\StringCalculator1\StringCalculator1.Tests\bin\Debug\StringCalculator1.Tests.pdb
+E:\Dev\StringCalculator1\StringCalculator1.Tests\bin\Debug\nunit.framework.dll
+E:\Dev\StringCalculator1\StringCalculator1.Tests\bin\Debug\nunit.framework.xml
+E:\Dev\StringCalculator1\StringCalculator1.Tests\obj\Debug\StringCalculator1.Tests.csprojResolveAssemblyReference.cache
+E:\Dev\StringCalculator1\StringCalculator1.Tests\obj\Debug\StringCalculator1.Tests.dll
+E:\Dev\StringCalculator1\StringCalculator1.Tests\obj\Debug\StringCalculator1.Tests.pdb
+E:\Dev\StringCalculator1\StringCalculator1.Tests\bin\Debug\StringCalculator1.dll
+E:\Dev\StringCalculator1\StringCalculator1.Tests\bin\Debug\StringCalculator1.pdb
