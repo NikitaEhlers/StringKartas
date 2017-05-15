@@ -19,6 +19,7 @@ namespace StringCalculator2.Tests
             var result = calculator.Add("");
 
             Assert.AreEqual(0, result);
+            
         }
 
         [Test]
