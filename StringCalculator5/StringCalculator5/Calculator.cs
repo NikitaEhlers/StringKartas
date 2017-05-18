@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StringCalculator4
+namespace StringCalculator5
 {
     public class Calculator
     {
@@ -24,16 +24,11 @@ namespace StringCalculator4
 
         public string[] createSplitNumbers(string numbers)
         {
-            string[] delimiter = new string[] { ",", "\n" };
-
-            if (numbers.Contains("//"))
-            {
-                string[] calculationParts = numbers.Split('\n');
-                calculationParts[0] = calculationParts[0].Replace("//", "");
-                calculationParts[0] = calculationParts[0].Replace("[", "");
-                delimiter = calculationParts[0].Split(']');
-                numbers = calculationParts[1];
-            }
+            DelimiterFactory factory = new ConcreteDelimiterFactory();
+            IDelimiter splitter = factory.CreateDelimiter(numbers);
+            string[] delimiter = splitter.CreateDelimiters(numbers);
+            IDelimiter numSplitter = factory.GetFormattedNumbers(numbers);
+            numbers = numSplitter.GetFormattedNumbers(numbers);
 
             string[] splitNumbers = numbers.Split(delimiter, StringSplitOptions.None);
 
@@ -44,9 +39,9 @@ namespace StringCalculator4
         {
             int total = 0;
 
-            for (int i = 0; i < splitNumbers.Length; i ++)
+            foreach (var num in splitNumbers)
             {
-                int number = Convert.ToInt32(splitNumbers[i]);
+                int number = Convert.ToInt32(num);
 
                 if (number > 1000)
                 {
@@ -55,7 +50,7 @@ namespace StringCalculator4
 
                 total = total + number;
             }
-
+            
             return total;
         }
 
@@ -85,7 +80,5 @@ namespace StringCalculator4
                 throw new Exception("Negatives not allowed " + exceptionMessage);
             }
         }
-
     }
-
 }
